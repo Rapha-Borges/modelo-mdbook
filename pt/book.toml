@@ -3,7 +3,7 @@ authors = ["AUTOR"]
 language = "pt"
 multilingual = true
 src = "src"
-title = "TITULO"
+title = "TITULO DO SEU LIVRO AQUI"
 
 [output.html]
 git-repository-url = "https://github.com/{}/{}"
