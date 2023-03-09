@@ -14,16 +14,19 @@ Após basta seguir o desenvolvimento do livro conforme a estrutura das diretóri
 
 ```
 └─ pt (Diretório padrão para a versão em PT)
-   |─ book.toml (Arquivo de configuração do mdBook)
-   └─ src (Diretório usado para manter todos .md, imagens e demais arquivos que serão referenciados durante o livro)
-   |          └─ BOOKSUMMARY.md (Arquivo com o texto para o “SUMÁRIO”)
-   |          └─ README.md (Arquivo com o texto para o “SOBRE”)
-   |          └─ SUMMARY.md (Arquivo padrão do mdBook que gera os “CAPÍTULOS) 
-   |          └─ Capitulo-X (Diretório de arquivos para cada capítulo respectivamente)
-   └─ theme (Diretório com todos os arquivos de estilização )
+    |─ book.toml (Arquivo de configuração do mdBook)
+    └─ src (Diretório usado para manter todos .md, imagens e demais arquivos que serão referenciados durante o livro)
+    |    └─ BOOKSUMMARY.md (Arquivo com o texto para o “SUMÁRIO”)
+    |    └─ README.md (Arquivo com o texto para o “SOBRE”)
+    |    └─ SUMMARY.md (Arquivo padrão do mdBook que gera os “CAPÍTULOS) 
+    |    └─ Capitulo-X (Diretório de arquivos para cada capítulo respectivamente)
+    └─ theme (Diretório com todos os arquivos de estilização )
+           └─ index.hbs (Arquivo para configurção do HTML)
+           └─ css (Diretório dos arquivos CSS)
+                └─ style.css (Arquivo padrão de estilo)
 ```
 
-Para maiores informações de como funciona cada um dos arquivos, basta consultar no próprio repositório desse template, cada arquivo vai contar com uma descrição ou exemplo.
+Para maiores informações de como funciona cada um dos arquivos, bas consultar no próprio repositório desse template, cada arquivo vai contar com uma descrição ou exemplo.
 
 ## Como contribuir
 
