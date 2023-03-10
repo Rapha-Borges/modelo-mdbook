@@ -6,8 +6,8 @@ src = "src"
 title = "TITULO DO SEU LIVRO AQUI"
 
 [output.html]
-git-repository-url = "https://github.com/{}/{}"
-edit-url-template = "https://github.com/{}/{}/edit/master/pt/src{path}"
+git-repository-url = "https://github.com/Rapha-Borges/modelo-mdbook"
+edit-url-template = "https://github.com/Rapha-Borges/modelo-mdbook/edit/master/pt/src{path}"
 additional-css = ["theme/css/style.css", "theme/css/mdbook-admonish.css"]
 cname = "CNAME"
 
