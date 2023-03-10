@@ -1,7 +1,7 @@
 [book]
 authors = ["AUTOR"]
 language = "pt"
-multilingual = true
+multilingual = false
 src = "src"
 title = "TITULO DO SEU LIVRO AQUI"
 
