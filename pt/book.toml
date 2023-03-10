@@ -8,7 +8,7 @@ title = "TITULO DO SEU LIVRO AQUI"
 [output.html]
 git-repository-url = "https://github.com/{}/{}"
 edit-url-template = "https://github.com/{}/{}/edit/master/pt/src{path}"
-additional-css = ["theme/css/style.css"]
+additional-css = ["theme/css/style.css", "theme/css/mdbook-admonish.css"]
 cname = "CNAME"
 
 [output.html.search]
@@ -19,3 +19,9 @@ boost-hierarchy = 2
 boost-paragraph = 1
 expand = true
 heading-split-level = 2
+
+[preprocessor]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "2.0.0" # do not edit: managed by `mdbook-admonish install`

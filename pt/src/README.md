@@ -28,6 +28,8 @@ Após basta seguir o desenvolvimento do livro conforme a estrutura das diretóri
 
 Para maiores informações de como funciona cada um dos arquivos, bas consultar no próprio repositório desse template, cada arquivo vai contar com uma descrição ou exemplo.
 
+
+
 ## Como contribuir
 
 Para contribuir com este projeto, siga os seguintes passos:
