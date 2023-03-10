@@ -18,10 +18,6 @@ jobs:
       run: |
         mkdir mdbook
         curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.28/mdbook-v0.4.28-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
-        echo `pwd`/mdbook >> $GITHUB_PATH
-    - name: Install mdbook-admonish
-      run: |
-        mkdir mdbook
         curl -sSL https://github.com/tommilligan/mdbook-admonish/releases/download/v1.8.0/mdbook-admonish-v1.8.0-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
         echo `pwd`/mdbook >> $GITHUB_PATH
     - name: Deploy GitHub Pages
