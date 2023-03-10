@@ -4,7 +4,7 @@ Para adicionar o menu expansível basta adicionar as tags ```<details>``` e ```<
 
 ```
 <details>
-<summary>{TEXTO QUE SERÁ EXIBIDO}</summary>
+<summary class="summary">{TEXTO QUE SERÁ EXIBIDO}</summary>
 
 TEXTO QUE FICARA OCULTO
 
