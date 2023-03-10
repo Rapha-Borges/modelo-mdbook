@@ -21,7 +21,7 @@ jobs:
         echo `pwd`/mdbook >> $GITHUB_PATH
     - name: Install mdbook-admonish
       run: |
-        cd mdbook
+        mkdir mdbook
         curl -sSL https://github.com/tommilligan/mdbook-admonish/releases/download/v1.8.0/mdbook-admonish-v1.8.0-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
         echo `pwd`/mdbook >> $GITHUB_PATH
     - name: Deploy GitHub Pages
