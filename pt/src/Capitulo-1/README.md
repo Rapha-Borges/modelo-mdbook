@@ -14,16 +14,10 @@ TEXTO QUE FICARA OCULTO
 ## Exemplo:
 
 <details open>
-<summary>CLIQUE AQUI PARA ABRIR OU FECHAR</summary>
+<summary class="summary">CLIQUE AQUI PARA ABRIR OU FECHAR</summary>
 
 Esse exemplo está utilizando a tag ```open``` para que o menu apareça aberto por padrão.
 
 
 </details>
-
-### Resultado Final
-
-Essa imagem é o resultado final aplós aplicar o CSS:
-
-![IMAGEM](images/menuexpandido.jpg)
 
