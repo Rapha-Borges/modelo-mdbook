@@ -10,6 +10,19 @@ Para utilizar este template, você deve clonar este repositório utilizando o co
 git clone https://github.com/Rapha-Borges/modelo-mdbook.git
 ```
 
+Editar o arquivo `book.toml` inserindo as informações do seu livro
+
+```
+[book]
+authors = ["AUTOR"]
+title = "TITULO DO SEU LIVRO AQUI"
+
+[output.html]
+git-repository-url = "https://github.com/{AUTOR}/{NOME-REPOSITORIO}"
+edit-url-template = "https://github.com/{AUTOR}/{NOME-REPOSITORIO}/edit/main/pt/{path}"
+cname = "CNAME"
+```
+
 Após basta seguir o desenvolvimento do livro conforme a estrutura das diretórios:
 
 ```
