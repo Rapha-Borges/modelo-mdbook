@@ -39,7 +39,7 @@ Após basta seguir o desenvolvimento do livro conforme a estrutura das diretóri
                 └─ style.css (Arquivo padrão de estilo)
 ```
 
-Para maiores informações de como funciona cada um dos arquivos, bas consultar no próprio repositório desse template, cada arquivo vai contar com uma descrição ou exemplo.
+Para maiores informações de como funciona cada um dos arquivos, basta consultar no próprio repositório desse template, cada arquivo vai contar com uma descrição ou exemplo.
 
 ## Como contribuir
 
