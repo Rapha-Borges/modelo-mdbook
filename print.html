@@ -1,0 +1,430 @@
+<!DOCTYPE HTML>
+<html lang="pt" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>TITULO DO SEU LIVRO AQUI</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/css/style.css">
+        <link rel="stylesheet" href="theme/css/mdbook-admonish.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introdução</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="BOOKSUMMARY.html">Sumário</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">CAPÍTULOS</li><li class="chapter-item expanded "><a href="Capitulo-1/index.html"><strong aria-hidden="true">1.</strong> Adicionar Menu Expansível</a></li><li class="chapter-item expanded "><a href="Capitulo-2/index.html"><strong aria-hidden="true">2.</strong> Material Design admonishments</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">TITULO DO SEU LIVRO AQUI</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Rapha-Borges/modelo-mdbook" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!-- Page table of contents -->
+                        <div class="sidetoc"><nav class="pagetoc"></nav></div>
+
+                        <h1 id="template-mdbook"><a class="header" href="#template-mdbook">Template mdBook</a></h1>
+<p>Este repositório contém um template para criação de livros utilizando o mdBook. </p>
+<h2 id="como-utilizar"><a class="header" href="#como-utilizar">Como utilizar</a></h2>
+<p>Para utilizar este template, você deve clonar este repositório utilizando o comando:</p>
+<pre><code>git clone https://github.com/Rapha-Borges/modelo-mdbook.git
+</code></pre>
+<p>Após basta seguir o desenvolvimento do livro conforme a estrutura das diretórios:</p>
+<pre><code>└─ pt (Diretório padrão para a versão em PT)
+    |─ book.toml (Arquivo de configuração do mdBook)
+    └─ src (Diretório usado para manter todos .md, imagens e demais arquivos que serão referenciados durante o livro)
+    |    └─ BOOKSUMMARY.md (Arquivo com o texto para o “SUMÁRIO”)
+    |    └─ README.md (Arquivo com o texto para o “SOBRE”)
+    |    └─ SUMMARY.md (Arquivo padrão do mdBook que gera os “CAPÍTULOS) 
+    |    └─ Capitulo-X (Diretório de arquivos para cada capítulo respectivamente)
+    └─ theme (Diretório com todos os arquivos de estilização )
+           └─ index.hbs (Arquivo para configurção do HTML)
+           └─ css (Diretório dos arquivos CSS)
+                └─ style.css (Arquivo padrão de estilo)
+</code></pre>
+<p>Para maiores informações de como funciona cada um dos arquivos, bas consultar no próprio repositório desse template, cada arquivo vai contar com uma descrição ou exemplo.</p>
+<h2 id="como-contribuir"><a class="header" href="#como-contribuir">Como contribuir</a></h2>
+<p>Para contribuir com este projeto, siga os seguintes passos:</p>
+<ol>
+<li>Crie um fork do projeto</li>
+<li>Crie uma branch para sua feature (<code>git checkout -b feature/AmazingFeature</code>)</li>
+<li>Faça o commit de suas mudanças (<code>git commit -m 'Add some AmazingFeature'</code>)</li>
+<li>Faça o push da branch (<code>git push origin feature/AmazingFeature</code>)</li>
+<li>Abra um pull request</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="adicionar-menu-expansível"><a class="header" href="#adicionar-menu-expansível"><a href="Capitulo-1/index.html">Adicionar Menu Expansível</a></a></h1>
+<h1 id="material-design-admonishments"><a class="header" href="#material-design-admonishments"><a href="Capitulo-2/index.html">Material Design admonishments</a></a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="menu-expansível"><a class="header" href="#menu-expansível">Menu Expansível</a></h1>
+<p>Para adicionar o menu expansível basta adicionar as tags <code>&lt;details&gt;</code> e <code>&lt;summary&gt;</code>. Colocando o título a ser exibido dentro da tag <code>&lt;summary&gt;</code> e abaixo o conteúdo que ficara oculto.</p>
+<pre><code>&lt;details&gt;
+&lt;summary class=&quot;summary&quot;&gt;{TEXTO QUE SERÁ EXIBIDO}&lt;/summary&gt;
+
+TEXTO QUE FICARA OCULTO
+
+&lt;/details&gt;
+</code></pre>
+<h2 id="exemplo"><a class="header" href="#exemplo">Exemplo:</a></h2>
+<details open>
+<summary class="summary">CLIQUE AQUI PARA ABRIR OU FECHAR</summary>
+<p>Esse exemplo está utilizando a tag <code>open</code> para que o menu apareça aberto por padrão.</p>
+</details>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="utilizando-um-processador-para-adicionar-material-design-admonishments"><a class="header" href="#utilizando-um-processador-para-adicionar-material-design-admonishments">Utilizando um processador para adicionar Material Design admonishments.</a></h1>
+<h2 id="exemplo-de-uso"><a class="header" href="#exemplo-de-uso">Exemplo de uso:</a></h2>
+<pre><code>``` + admonish + {formato_escolhido}
+
+{TEXTO PARA SER EXIBIDO}
+
+```
+</code></pre>
+<p> </p>
+<hr />
+<h2 id="referência"><a class="header" href="#referência">Referência</a></h2>
+<p>Para outros exemplos você pode consultar a documentação oficial <a href="https://tommilligan.github.io/mdbook-admonish/reference.html">CLICANDO AQUI</a></p>
+<p> </p>
+<hr />
+<h2 id="info"><a class="header" href="#info">Info</a></h2>
+<div id="admonition-info" class="admonition info">
+<div class="admonition-title">
+<p>Info</p>
+<p><a class="admonition-anchor-link" href="Capitulo-2/index.html#admonition-info"></a></p>
+</div>
+<div>
+<p>A beautifully styled message.</p>
+</div>
+</div>
+<pre><code>```admonish info
+{TEXTO PARA SER EXIBIDO}
+```
+
+</code></pre>
+<p> </p>
+<hr />
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<div id="admonition-example" class="admonition example">
+<div class="admonition-title">
+<p>Example</p>
+<p><a class="admonition-anchor-link" href="Capitulo-2/index.html#admonition-example"></a></p>
+</div>
+<div>
+<p>My example is the best!</p>
+</div>
+</div>
+<pre><code>```admonish example
+My example is the best!
+```
+</code></pre>
+<p> </p>
+<hr />
+<h2 id="note"><a class="header" href="#note">Note</a></h2>
+<div id="admonition-note" class="admonition note">
+<div class="admonition-title">
+<p>Note</p>
+<p><a class="admonition-anchor-link" href="Capitulo-2/index.html#admonition-note"></a></p>
+</div>
+<div>
+<p>A plain note.</p>
+</div>
+</div>
+<pre><code>```admonish
+A plain note.
+```
+</code></pre>
+<p> </p>
+<hr />
+<h2 id="warning"><a class="header" href="#warning">Warning</a></h2>
+<pre><code>```admonish warning title=&quot;{TITULO CUSTOMIZADO}&quot;
+The following steps can lead to irrecoverable data corruption.
+```
+</code></pre>
+<div id="admonition-titulo-customizado" class="admonition warning">
+<div class="admonition-title">
+<p>{TITULO CUSTOMIZADO}</p>
+<p><a class="admonition-anchor-link" href="Capitulo-2/index.html#admonition-titulo-customizado"></a></p>
+</div>
+<div>
+<p>The following steps can lead to irrecoverable data corruption.</p>
+</div>
+</div>
+&nbsp;
+<hr />
+<h2 id="success"><a class="header" href="#success">Success</a></h2>
+<pre><code>```admonish success title=&quot;{TITULO CUSTOMIZADO}&quot;
+This will take a while, go and grab a drink of water.
+```
+</code></pre>
+<div id="admonition-titulo-customizado-1" class="admonition success">
+<div class="admonition-title">
+<p>{TITULO CUSTOMIZADO}</p>
+<p><a class="admonition-anchor-link" href="Capitulo-2/index.html#admonition-titulo-customizado-1"></a></p>
+</div>
+<div>
+<p>This will take a while, go and grab a drink of water.</p>
+</div>
+</div>
+&nbsp;
+<hr />
+<h2 id="markdownhtml"><a class="header" href="#markdownhtml">Markdown/HTML</a></h2>
+<p>Você pode utilizar markdown e HTML para customizar</p>
+<pre><code>```admonish tip title=&quot;_Referencing_ and &lt;i&gt;dereferencing&lt;/i&gt;&quot;
+The opposite of *referencing* by using `&amp;` is *dereferencing*, which is
+accomplished with the &lt;span style=&quot;color: hotpink&quot;&gt;dereference operator&lt;/span&gt;, `*`.
+```
+</code></pre>
+<div id="admonition-_referencing_-and-dereferencing" class="admonition tip">
+<div class="admonition-title">
+<p><em>Referencing</em> and <i>dereferencing</i></p>
+<p><a class="admonition-anchor-link" href="Capitulo-2/index.html#admonition-_referencing_-and-dereferencing"></a></p>
+</div>
+<div>
+<p>The opposite of <em>referencing</em> by using <code>&amp;</code> is <em>dereferencing</em>, which is
+accomplished with the <span style="color: hotpink">dereference operator</span>, <code>*</code>.</p>
+</div>
+</div>
+&nbsp;
+<hr />
+<h2 id="alerta-de-bug"><a class="header" href="#alerta-de-bug">Alerta de bug</a></h2>
+<pre><code>~~~admonish bug
+This syntax won't work in Python 3:
+```python
+print &quot;Hello, world!&quot;
+```
+~~~
+</code></pre>
+<div id="admonition-bug" class="admonition bug">
+<div class="admonition-title">
+<p>Bug</p>
+<p><a class="admonition-anchor-link" href="Capitulo-2/index.html#admonition-bug"></a></p>
+</div>
+<div>
+<p>This syntax won't work in Python 3:</p>
+<pre><code class="language-python">print &quot;Hello, world!&quot;
+</code></pre>
+</div>
+</div>
+&nbsp;
+<hr />
+<h2 id="custom"><a class="header" href="#custom">Custom</a></h2>
+<p>Você também customizar com um arquivo CSS adicionando nomes de classes</p>
+<pre><code>```admonish note class=&quot;custom-0 custom-1&quot;
+Styled with my custom CSS class.
+```
+</code></pre>
+<div id="admonition-note-1" class="admonition note custom-0 custom-1">
+<div class="admonition-title">
+<p>Note</p>
+<p><a class="admonition-anchor-link" href="Capitulo-2/index.html#admonition-note-1"></a></p>
+</div>
+<div>
+<p>Styled with my custom CSS class.</p>
+</div>
+</div>
+<p>Que vai gerar algo assim no HTML, aonde você podera aplicar o CSS:</p>
+<pre><code>&lt;div class=&quot;admonition note custom-0 custom-1&quot;
+    ...
+&lt;/div&gt;
+</code></pre>
+<p> </p>
+<hr />
+<h2 id="collapsible"><a class="header" href="#collapsible">Collapsible</a></h2>
+<pre><code>```admonish title=&quot;{TITULO CUSTOMIZADO}&quot; collapsible=true
+{TEXTO PARA SER EXIBIDO}
+```
+</code></pre>
+<details id="admonition-titulo-customizado-2" class="admonition note">
+<summary class="admonition-title">
+<p>{TITULO CUSTOMIZADO}</p>
+<p><a class="admonition-anchor-link" href="Capitulo-2/index.html#admonition-titulo-customizado-2"></a></p>
+</summary>
+<div>
+<p>{TEXTO PARA SER EXIBIDO}</p>
+</div>
+</details>
+&nbsp;
+<hr />
+<h2 id="invalid-blocks"><a class="header" href="#invalid-blocks">Invalid blocks</a></h2>
+<p>Se ocorrer um erro na renderização será exibido dessa forma</p>
+<div id="admonition-error-rendering-admonishment" class="admonition bug">
+<div class="admonition-title">
+<p>Error rendering admonishment</p>
+<p><a class="admonition-anchor-link" href="Capitulo-2/index.html#admonition-error-rendering-admonishment"></a></p>
+</div>
+<div>
+<p>Failed with: TOML parsing error: invalid escape character in string: <code>j</code> at line 1 column 9</p>
+<p>Original markdown input:</p>
+<pre><code>```admonish title=&quot;\j&quot;
+This block will error
+```
+</code></pre>
+</div>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </body>
+</html>
