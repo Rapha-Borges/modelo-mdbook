@@ -1,23 +1,22 @@
-# Menu Expansível
+# Expandable Menu
 
-Para adicionar o menu expansível basta adicionar as tags ```<details>``` e ```<summary>```. Colocando o título a ser exibido dentro da tag ```<summary>``` e abaixo o conteúdo que ficara oculto.
+To add the expandable menu just add the `<details>` and `<summary>` tags. Placing the title to be displayed inside the `<summary>` tag and below the content.
 
 ```HTML
 <details>
-<summary>{TEXTO QUE SERÁ EXIBIDO}</summary>
+<summary>{TITLE THAT WILL BE DISPLAYED}</summary>
 
-TEXTO QUE FICARA OCULTO
+{CONTENT}
 
 </details>
 ```
 
-## Exemplo:
+## Example:
 
 <details open>
-<summary class="summary">CLIQUE AQUI PARA ABRIR OU FECHAR</summary>
+<summary class="summary">CLICK HERE TO OPEN OR CLOSE</summary>
 
-Esse exemplo está utilizando a tag ```open``` para que o menu apareça aberto por padrão.
+This example is using the `open` tag so that the menu appears open by default.
 
 
 </details>
-

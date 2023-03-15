@@ -1,3 +1,5 @@
+# TEMPORARIAMENTE INDISPONÍVEL
+
 # Utilizando um processador para adicionar Material Design admonishments.
 
 ##  Exemplo de uso:

@@ -1,20 +1,20 @@
 # SOBRE
 
-[Introdução](README.md)
+[Introduction](README.md)
 
 ---
 
-[Sumário](BOOKSUMMARY.md)
+[Summary](BOOKSUMMARY.md)
 
 ---
 
-# CAPÍTULOS
+# CHAPTERS
 
-- [Adicionar Menu Expansível](Capitulo-1/README.md)
+- [Add Expandable Menu](Capitulo-1/README.md)
 
-- [Material Design admonishments](Capitulo-2/README.md)
+- [Material Design admonishments TEMPORARILY UNAVAILABLE](Capitulo-2/README.md)
 
-- [Exemplo de capitulos expanssíveis](Capitulo-3/README.md)
-    - [EXEMPLO 1](Capitulo-3/Exemplo-1)
-    - [EXEMPLO 2](Capitulo-3/Exemplo-2)
-    - [EXEMPLO 3](Capitulo-3/Exemplo-3)
+- [Expandable chapters](Capitulo-3/README.md)
+    - [Example 1](Capitulo-3/Exemplo-1)
+    - [Example 2](Capitulo-3/Exemplo-2)
+    - [Example 3](Capitulo-3/Exemplo-3)
