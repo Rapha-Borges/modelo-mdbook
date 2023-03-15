@@ -6,7 +6,7 @@ Este repositório contém um template para criação de livros utilizando o mdBo
 
 Para utilizar este template, você deve clonar este repositório utilizando o comando:
 
-```
+```bash
 git clone https://github.com/Rapha-Borges/modelo-mdbook.git
 ```
 

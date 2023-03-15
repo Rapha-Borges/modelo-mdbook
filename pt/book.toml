@@ -1,15 +1,20 @@
 [book]
 authors = ["AUTOR"]
 language = "pt"
-multilingual = false
+multilingual = true
 src = "src"
 title = "TITULO DO SEU LIVRO AQUI"
 
 [output.html]
 git-repository-url = "https://github.com/Rapha-Borges/modelo-mdbook"
 edit-url-template = "https://github.com/Rapha-Borges/modelo-mdbook/edit/main/pt/{path}"
-additional-css = ["theme/css/style.css", "theme/css/mdbook-admonish.css"]
 cname = "CNAME"
+additional-css = ["theme/css/style.css", "theme/css/mdbook-admonish.css"]
+
+[[output.i18n.translations]]
+language = "en"
+title = "Title"
+src = "translations/en"
 
 [output.html.search]
 limit-results = 20
@@ -25,3 +30,7 @@ heading-split-level = 2
 [preprocessor.admonish]
 command = "mdbook-admonish"
 assets_version = "2.0.0" # do not edit: managed by `mdbook-admonish install`
+
+[output.html.fold]
+enable = true    # whether or not to enable section folding
+level = 0         # the depth to start folding
