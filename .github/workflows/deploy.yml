@@ -41,7 +41,7 @@ jobs:
         fetch-depth: 0
     - name: Copy index.html to .
       run: |
-        cp ./home/* .
+        cp -r ./home/* .
         git config user.name "Deploy from CI"
         git config user.email ""
         git checkout gh-pages        
