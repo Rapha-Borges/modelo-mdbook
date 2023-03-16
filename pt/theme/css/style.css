@@ -25,6 +25,10 @@ h5 {
     margin-bottom: 20px;
 }
 
+.font-17::before {
+    font-size: 17px;
+}
+
 details {
     /* margin: 1rem auto; */
     /* width: 35em; */
