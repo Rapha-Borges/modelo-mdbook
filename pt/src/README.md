@@ -13,22 +13,27 @@ git clone https://github.com/Rapha-Borges/modelo-mdbook.git
 Após basta seguir o desenvolvimento do livro conforme a estrutura das diretórios:
 
 ```
-└─ pt (Diretório padrão para a versão em PT)
-    |─ book.toml (Arquivo de configuração do mdBook)
-    └─ src (Diretório usado para manter todos .md, imagens e demais arquivos que serão referenciados durante o livro)
-    |    └─ BOOKSUMMARY.md (Arquivo com o texto para o “SUMÁRIO”)
-    |    └─ README.md (Arquivo com o texto para o “SOBRE”)
-    |    └─ SUMMARY.md (Arquivo padrão do mdBook que gera os “CAPÍTULOS) 
-    |    └─ Capitulo-X (Diretório de arquivos para cada capítulo respectivamente)
-    └─ theme (Diretório com todos os arquivos de estilização )
-           └─ index.hbs (Arquivo para configurção do HTML)
-           └─ css (Diretório dos arquivos CSS)
-                └─ style.css (Arquivo padrão de estilo)
+└─ pt (Default directory for the PT version)
+|   |─ book.toml (mdBook configuration file)
+|   └─ src (Directory used to hold all .md, images and other files that will be referenced throughout the book)
+|   |    └─ BOOKSUMMARY.md (File with the “SUMMARY” text)
+|   |    └─ README.md (File with the “SOBRE” text)
+|   |    └─ SUMMARY.md (Standard mdBook file that generates "CHAPTERS") 
+|   |    └─ Capitulo-X (File directory for each chapter)
+|   └─ theme (Directory with all styling files)
+|   |      └─ index.hbs (HTML configuration file)
+|   |      └─ css (CSS files directory)
+|   |      |    └─ style.css (Default CSS style file)
+|   └─ translation (Directory for translations)
+|   |            └─ en (English files)
+|   |            └─ es (Spanish files)
+└─ home (Directory for the home page)
+|     └─ index.html (Home page main HTML file)
+|     └─ CSS (Directory for the home page CSS files)
+|     |    └─style.css(Home page main CSS file)
 ```
 
 Para maiores informações de como funciona cada um dos arquivos, bas consultar no próprio repositório desse template, cada arquivo vai contar com uma descrição ou exemplo.
-
-
 
 ## Como contribuir
 

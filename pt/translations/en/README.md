@@ -10,6 +10,19 @@ To use this template, you must clone this repository using the command:
 git clone https://github.com/Rapha-Borges/modelo-mdbook.git
 ```
 
+Edit the `book.toml` file by entering your book information
+
+```
+[book]
+authors = ["AUTHOR"]
+title = "TITLE OF YOUR BOOK HERE"
+
+[output.html]
+git-repository-url = "https://github.com/{AUTHOR}/{REPOSITORY-NAME}"
+edit-url-template = "https://github.com/{AUTHOR}/{REPOSITORY-NAME}/edit/main/pt/{path}"
+cname = "CNAME"
+```
+
 Then just follow the development of the book according to the structure of the directories:
 
 ```
@@ -23,19 +36,17 @@ Then just follow the development of the book according to the structure of the d
 |   └─ theme (Directory with all styling files)
 |   |      └─ index.hbs (HTML configuration file)
 |   |      └─ css (CSS files directory)
-|   |           └─ style.css (Default CSS style file)
+|   |      |    └─ style.css (Default CSS style file)
 |   └─ translation (Directory for translations)
-|                └─ en (English files)
-|                └─ es (Spanish files)
-└─ home ()
-      └─ index.html ()
-      └─ CSS ()
-      |    └─style.css()
+|   |            └─ en (English files)
+|   |            └─ es (Spanish files)
+└─ home (Directory for the home page)
+|     └─ index.html (Home page main HTML file)
+|     └─ CSS (Directory for the home page CSS files)
+|     |    └─style.css(Home page main CSS file)
 ```
 
 For more information on how each of the files works, just consult the repository of this template, each file will have a description or example.
-
-
 
 ## How to contribute
 
